@@ -1,23 +1,42 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 import './App.css';
+import Landing from './Common/Landing';
+import PageNotFound from './Common/errors/PageNotFound';
+import Header from './Common/Header';
+import Footer from './Common/Footer';
+import About from './Common/About';
+import Projects from './Common/Projects';
+import Contact from './Common/Contact';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      <Switch>
+        <Route path='/' exact={true}>
+          <Landing />
+        </Route>
+        <Route path='/about'>
+          <Header />
+          <About />
+          <Footer />
+        </Route>
+        <Route path='/projects'>
+          <Header />
+          <Projects />
+          <Footer />
+        </Route>
+        <Route path='/contact'>
+          <Header />
+          <Contact />
+          <Footer />
+        </Route>
+        <Route>
+          <Header />
+          <PageNotFound />
+          <Footer />
+        </Route>
+      </Switch>
     </div>
   );
 }
