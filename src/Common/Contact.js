@@ -4,7 +4,7 @@ export default function Contact() {
     return (
         <>
             <div className="contactForm">
-                <form action="https://formspree.io/f/xqkgwwov" method="POST">
+                <form action="https://formspree.io/f/meqvwykq" method="POST">
                     <p>Fill out this form with your message and I'll get back to you shortly!</p>
                     <div className="contactFormBorder">
                         <label for="user-name">Name</label><br />

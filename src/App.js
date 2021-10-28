@@ -11,33 +11,35 @@ import Contact from './Common/Contact';
 
 function App() {
   return (
-    <div className='app'>
-      <Switch>
-        <Route path='/' exact={true}>
-          <Landing />
-        </Route>
-        <Route path='/about'>
-          <Header />
-          <About />
-          <Footer />
-        </Route>
-        <Route path='/projects'>
-          <Header />
-          <Projects />
-          <Footer />
-        </Route>
-        <Route path='/contact'>
-          <Header />
-          <Contact />
-          <Footer />
-        </Route>
-        <Route>
-          <Header />
-          <PageNotFound />
-          <Footer />
-        </Route>
-      </Switch>
-    </div>
+    <>
+      <div className='app'>
+        <Switch>
+          <Route path='/' exact={true}>
+            <Landing />
+          </Route>
+          <Route path='/about'>
+            <Header />
+            <About />
+            <Footer />
+          </Route>
+          <Route path='/projects'>
+            <Header />
+            <Projects />
+            <Footer />
+          </Route>
+          <Route path='/contact'>
+            <Header />
+            <Contact />
+            <Footer />
+          </Route>
+          <Route>
+            <Header />
+            <PageNotFound />
+            <Footer />
+          </Route>
+        </Switch>
+      </div>
+    </>
   );
 }
 
