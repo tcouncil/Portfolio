@@ -18,6 +18,10 @@ function App() {
             <Landing />
             <Footer />
           </Route>
+          <Route path='/Portfolio'>
+            <Landing />
+            <Footer />
+          </Route>
           <Route path='/about'>
             <Header />
             <About />

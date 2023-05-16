@@ -14,11 +14,11 @@ export default function Landing() {
     const images = [
         {
             image: Showcase_1,
-            title: 'Decoder',
-            description: 'A small project For the Thinkful Bootcamp',
-            stack: '',
-            repo: '',
-            live: ''
+            title: 'TeForm',
+            description: 'During my time in college, while taking Japanese 1, I recognized the need for an effective study tool to reinforce our understanding of verb conjugation. To address this, I took the initiative to develop a simple yet powerful quizzing tool specifically tailored to aid myself and my classmates in mastering this essential aspect of the language.',
+            stack: 'React',
+            repo: 'https://github.com/tcouncil/teform',
+            live: 'https://tcouncil.github.io/teform/'
         },
         {
             image: Showcase_2,
