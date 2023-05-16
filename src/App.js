@@ -12,24 +12,27 @@ import Contact from './Common/Contact';
 function App() {
   return (
     <>
-      <div className='app'>
+      <div className='app container'>
         <Switch>
           <Route path='/' exact={true}>
             <Landing />
+            <Footer />
           </Route>
           <Route path='/about'>
             <Header />
             <About />
-            <Footer />
           </Route>
           <Route path='/projects'>
             <Header />
-            <Projects />
-            <Footer />
+            <div className='landing-card'>
+              <Projects />
+            </div>
           </Route>
           <Route path='/contact'>
             <Header />
-            <Contact />
+            <div className='landing-card'>
+              <Contact />
+            </div>
             <Footer />
           </Route>
           <Route>

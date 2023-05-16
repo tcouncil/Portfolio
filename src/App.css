@@ -1,45 +1,128 @@
-.app {
-  background-image: linear-gradient(128deg, #140f16 0%, #544b7c 100%);
-  min-height: 100vh;
-  background-repeat: repeat;
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+
+body {
+  background-image: url('https://cdn.discordapp.com/attachments/1096481199817510922/1107725702918324244/Travis_faint_circuit_boards_and_pixel_fractals_neo_pop_cyberpun_1a7a9997-1255-4c37-882d-2d3f58a71add.png');
+  background-size: cover;
+  -webkit-animation: slidein 100s;
+  animation: slidein 100s;
+
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
 }
 
+@-webkit-keyframes slidein {
+  from {
+    background-position: top;
+    background: size 768px;
+  }
+
+  to {
+    background-position: -100px 0px;
+    background-size: 1024px;
+  }
+}
+
+@keyframes slidein {
+  from {
+    background-position: top;
+    background-size: 768px;
+  }
+
+  to {
+    background-position: -256px 0px;
+    background-size: 2048px;
+  }
+
+}
+
+
 .landing {
-  font-size: large;
   color: #d6c877;
-  text-shadow: 2px 2px #7A5B51;
+  text-shadow: 2px 2px #251d1a;
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: #a3dbeeb4;
   text-align: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(7px + 1vmin);
   font-family: 'Roboto', sans-serif;
   justify-content: center;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  background: rgba(75, 75, 250, 0.062);
+  border-radius: 3px;
+  padding-top: 1.5%;
+}
+
+#landing-hr {
+  margin-top: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(84, 240, 92, 0.75), rgba(255, 255, 255, 0)) !important; 
+  
+}
+
+.landing p{
+  padding: 0;
+}
+
+.landing-card {
+  border-color: rgba(0, 0, 0, 0.021);
+  border-style: solid;
+  border-radius: 1%;
+  background-image: linear-gradient(-90deg, #070c16f6 0%, #0f0c2be8 100%);
+  padding: 0;
+
 }
 
 .landing h1 {
   font-family: 'Philosopher', sans-serif;
-  color: #b1ecff;
+  color: #ebf3f7 !important;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
-.landing-name-pic {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+span:nth-child(1) {
+  filter: blur(5px);
 }
 
+span:nth-child(2) {
+  filter: blur(10px);
+}
+
+span:nth-child(3) {
+  filter: blur(25px);
+}
+
+span:nth-child(4) {
+  filter: blur(150px);
+}
+
+
+@keyframes rotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+
+
+
+
+header a{
+  font-style: normal;
+}
 
 .portrait {
-  height: 33vh;
-  margin-left: 15px;
+  height: 23vh;
 }
 
-.portrait:hover{
-  height: 34vh;
-}
 
 button {
   cursor: pointer;
@@ -67,92 +150,35 @@ button {
   -webkit-text-stroke-color: #a3dbee;
   font-family: 'Roboto', sans-serif;
   border: #97c289 1px solid;
-  border-radius: 4px; 
-}
-
-.cert{
-  width: 50vw;
-  margin-right: 10vw;
-}
-
-#certs h3 {
-  color: #ddc433;
-  font-weight: bolder   ;
-}
-
-#certs a {
-  font-size: large;
-  color: #d6c877;
-}
-
-#certs a:visited{
-  color: #d6cd98;
-}
-
-#certs a:hover {
-  color: #ffec81;
-}
-
-.about {
-  color: #b1ecff;
-  -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: #a3dbeeb4;
-  text-align: center;
-  font-size: calc(7px + 1vmin);
-  font-family: 'Roboto', sans-serif;
-}
-
-.about-q {
-  background-color: rgba(0, 0, 0, 0.233);
-  border: #7ca36e 1px solid;
-  border-radius: 3px;
-  margin: 3vw;
-  padding: 1vw;
-}
-.about-q {
-  padding-left: 5vw;
-  padding-right: 5vw;
-}
-
-
-
-.about-name-pic {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.about-duo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 3vw;
+  border-radius: 4px;
 }
 
 .projects-group {
-  display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   color: #b1ecff;
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: #a3dbeeb4;
+  border: #00000060 1px solid;
+  border-radius: 1px;
+  background-color: rgba(0, 0, 0, 0.39);
+  margin-left: 50px;
 }
 
 .project-card {
   text-align: center;
   flex: 1;
-  background-color: rgba(177, 235, 255, 0.068);
-  border: #7ca36e 1px solid;
-  border-radius: 3px;
-  max-width: 27vw;
-  margin: 3vh;
-  min-height: 50vh;
+  border: #00000060 1px solid;
+  border-radius: 1px;
+  background-color: rgba(0, 0, 0, 0.39);
+  margin-left: auto;
 }
 
-.project-card img{
-  max-width: 20vw;
-  border: #7ca36e 1px solid;
-  border-radius: 3px;
+.project-card img {
+  max-width: 10.75vw;
+  border-color: rgba(0, 0, 0, 0.021);
+  border-style: solid;
+  border-radius: 1%;
 }
 
 header {
@@ -178,31 +204,25 @@ header h1 {
 }
 
 .contactForm {
-  display: flex;
   justify-content: center;
   text-align: center;
   color: #b1ecff;
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: #a3dbeeb4;
-  padding: 15px;
-  background-color: rgba(0, 0, 0, 0);
+  padding: 0;
 }
 
 .contactFormBorder {
-  border: #7ca36e 1px solid;
-  border-radius: 3px;
+  border: #00000060 1px solid;
+  border-radius: 1px;
   background-color: rgba(0, 0, 0, 0.39);
-  padding: 16px;
 }
 
-form input, form textarea {
-  min-width: 66vw;
-  margin-bottom: 20px !important;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgb(255, 255, 255), rgba(0, 0, 0, 0.1));
-}
-
+form input,
 form textarea {
-  height: 150px;
+  min-width: 88%;
+  margin-bottom: 3px !important;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgb(255, 255, 255), rgba(0, 0, 0, 0.1));
 }
 
 footer {
@@ -214,31 +234,35 @@ footer {
   .landing-name-pic {
     flex-direction: column;
   }
+
   .portrait {
-    height: 66vw;
     margin-left: 15px;
     margin-top: 3vh;
   }
 
-  .cert{
+  .cert {
     margin-right: 0;
     margin-bottom: 2vh;
     width: 75vw;
   }
+
   .about-duo {
     flex-direction: column;
   }
+
   .about-duo .portrait {
     height: 33vw;
   }
+
   .projects-group {
     flex-direction: column;
   }
+
   .project-card {
     max-width: 90vw;
   }
 
-  .project-card img{
-    max-width: 75vw;
+  .project-card img {
+    max-width: 10vw;
   }
 }
