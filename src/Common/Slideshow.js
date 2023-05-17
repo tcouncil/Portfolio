@@ -20,9 +20,10 @@ const Slideshow = ({ images }) => {
                 description={images[currentIndex].description}
                 stack={images[currentIndex].stack}
                 github={images[currentIndex].repo}
+                live={images[currentIndex].live}
             />
-            <button className='button' onClick={goToPrevious}>&lt;</button>
-            <button className='button' onClick={goToNext}>&gt;</button>
+            <button className='button px-5' onClick={goToPrevious}>&lt;</button>
+            <button className='button px-5 mb-5' onClick={goToNext}>&gt;</button>
         </div>
 
 
