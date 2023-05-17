@@ -14,7 +14,7 @@ export default function Landing() {
             live: 'https://tcouncil.github.io/teform/'
         },
         {
-            image: Placeholder,
+            image: 'https://raw.githubusercontent.com/tcouncil/Portfolio/main/src/images/project-pt.png',
             title: 'pasteType',
             description: 'As a passionate learner and developer, I understand the importance of accuracy and speed when it comes to typing code or any text. To challenge myself and improve my typing skills, I created a small web application to practice.',
             stack: 'React',
