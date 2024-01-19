@@ -23,11 +23,11 @@ export default function Landing() {
         },
         {
             image: Placeholder,
-            title: 'Placeholder',
-            description: 'A small project...',
-            stack: '',
+            title: 'Zelda Like Game Demo',
+            description: 'This is a project I started with the vision of combining the first 2 Zelda games.',
+            stack: 'Unity',
             repo: '',
-            live: ''
+            live: 'https://play.unity.com/mg/other/webgl-builds-387126'
         }
     ];
 
