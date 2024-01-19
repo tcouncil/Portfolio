@@ -22,7 +22,7 @@ export default function Landing() {
             live: 'https://tcouncil.github.io/PasteType/'
         },
         {
-            image: Placeholder,
+            image: 'https://raw.githubusercontent.com/tcouncil/Portfolio/main/src/images/project-zg.png',
             title: 'Zelda Like Game Demo',
             description: 'This is a project I started with the vision of combining the first 2 Zelda games.',
             stack: 'Unity',
