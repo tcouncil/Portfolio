@@ -40,13 +40,16 @@
             const iframe = document.getElementById('webgl_iframe');
             switch (resolution) {
                 case '480p':
-                    iframe.style.height = '27vw'; // 16:9 aspect ratio (9 / 16 * 100)
+                    iframe.style.width = '854px';
+                    iframe.style.height = '480px';
                     break;
                 case '720p':
-                    iframe.style.height = '56.25vw'; // 16:9 aspect ratio (9 / 16 * 100)
+                    iframe.style.width = '1280px';
+                    iframe.style.height = '720px';
                     break;
                 case '1080p':
-                    iframe.style.height = '100vw'; // 16:9 aspect ratio (9 / 16 * 100)
+                    iframe.style.width = '1920px';
+                    iframe.style.height = '1080px';
                     break;
                 // Add more cases for additional resolutions
             }
